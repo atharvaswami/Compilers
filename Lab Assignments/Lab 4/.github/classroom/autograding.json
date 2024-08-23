@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "test1",
+      "setup": "wget https://hegden.github.io/cs406/homeworks/pa4tests/pa4_test_combination.sh;chmod +x pa4_test_combination.sh",
+      "run": "./pa4_test_combination.sh | grep -q \"Test passed.\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 3,
+      "points": 5
+    },
+    {
+      "name": "test2",
+      "setup": "wget https://hegden.github.io/cs406/homeworks/pa4tests/pa4_test_complex.sh;chmod +x pa4_test_complex.sh",
+      "run": "./pa4_test_complex.sh | grep -q \"Test passed.\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 3,
+      "points": 5
+    }
+  ]
+}

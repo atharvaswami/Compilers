@@ -1,0 +1,37 @@
+PROGRAM hello
+BEGIN
+		STRING eol := "\n";
+	STRING space := " ";
+	
+	FUNCTION FLOAT Func(FLOAT arg1, FLOAT arg2, FLOAT arg3, FLOAT arg4, FLOAT arg5, FLOAT arg6, FLOAT arg7, FLOAT arg8, FLOAT arg9, FLOAT arg10)
+	BEGIN
+	  	FLOAT returnValue;
+		returnValue := 0.0;
+		WRITE(arg1, space, arg2, space, arg3, space, arg4, space, arg5, space, arg6, space, arg7, space, arg8, space, arg9, space, arg10, eol);
+		returnValue := arg1+arg2+arg3+arg4+arg5+arg6+arg7+arg8+arg9+arg10;
+		WRITE(returnValue, eol);
+		RETURN returnValue;
+	END
+
+	
+	FUNCTION INT main ()
+	BEGIN
+		FLOAT arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,result;
+		arg1 := 1.0;
+		arg2 := 1.0;
+		arg3 := 1.0;
+		arg4 := 1.0;
+		arg5 := 1.0;
+		arg6 := 1.0;
+		arg7 := 1.0;
+		arg8 := 1.0;
+		arg9 := 0.0;
+		arg10 := 1.0;
+		result := 0.0;
+		WRITE(arg1, space, arg2, space, arg3, space, arg4, space, arg5, space, arg6, space, arg7, space, arg8, space, arg9, space, arg10, eol);
+
+		result := Func(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
+		WRITE(result);
+		RETURN 0;
+	END
+END
